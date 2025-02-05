@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Online Store</h1>
+        <input type="text" id="search" placeholder="Search for products..." onchange="searchProduct()">
+        <select id="category">
+            <option value="all">All Categories</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's Clothing</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelery</option>
+        </select>
+        <select id="sort">
+            <option value="">Sort by Price</option>
+            <option value="asc">Ascending</option>
+            <option value="des">Descending</option>
+        </select>
+        <!-- <input type="number" id="" name="" max="500" min="0"  placeholder="Max or Min price"> -->
+        <button onclick="filter()">Filter</button>
+    </header>
+
+    <header>
+        <h1>&#128722; Shopping Cart</h1>
+        <div class="cart1">Your Cart is Empty.</div>
+        <div class="cart2">
+        </div>
+    </header>
+
+    <div id="products">
+        <!-- Add products here -->
+    </div>
+
+    <footer>
+        <div class="pagination">
+            <a href="#" onclick="prevPage()">&laquo;</a> <!-- Previous -->
+            <a href="#" class ="btn" id="active1" onclick="setActive(1)">1</a>
+            <a href="#" class ="btn" id="active2" onclick="setActive(2)">2</a>
+            <a href="#" class ="btn" id="active3" onclick="setActive(3)">3</a>
+            <a href="#" class ="btn" id="active4" onclick="setActive(4)">4</a>
+            <a href="#" onclick="nextPage()">&raquo;</a> <!-- Next -->
+        </div>
+        <span>&copy; 2024 Online Store. All rights reserved.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
